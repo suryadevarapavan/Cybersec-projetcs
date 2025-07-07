@@ -1,6 +1,6 @@
 import requests
 import json
-ip = str(input("Enter IP Address:"))
+ip = input("Enter IP Address:")
 url= "https://api.ipbase.com/v2/info?"
 
 key = "YOUR_API_KEY"
