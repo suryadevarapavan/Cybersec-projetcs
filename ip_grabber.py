@@ -5,11 +5,11 @@ url= "https://api.ipbase.com/v2/info?"
 
 key = "YOUR_API_KEY"
 
-headers = {
+params = {
      'Authorization': key,
      'ip':ip
 }
-response = requests.get(url, headers=headers)
+response = requests.get(url, params=params)
 
 if response.status_code == 200:
     data = response.json()
